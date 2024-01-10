@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio con divs</title>
+<link rel="stylesheet" href="estilos-divs.css">
+<script type="text/javascript">
+	function closeSession() {
+		alert("Adios!!")
+		loadPage("cierre_sesion.html")
+	}
+	function loadPage(page) {
+		document.getElementById("contenido").innerHTML = '<object type="text/html" height="650px" width="100%" data="'+page+'"></object>';
+	}
+</script>
+</head>
+<body class="fondo">
+	<div id="contenedor">
+		<div id="cabecera">
+			<div id="cabecera_titulo">
+				<H1 style="text-align: center">Música y Recetas</H1>
+			</div>
+			<div id="cabecera_botones">
+				<a href="#" onclick="closeSession()"><img src="images/cerrar_sesion.png" alt="Cerrar sesión" width="90" height="45"></a>
+			</div>
+			<!-- 			<table> -->
+			<!-- 				<tr> -->
+			<!-- 					<td width="33%"></td> -->
+			<!-- 					<td width="33%"><H1 style="text-align: center">Música y Recetas</H1></td> -->
+			<!-- 					<td width="33%" align="right"> -->
+			<!-- 						<a href="#" onclick="closeSession()"> -->
+			<!-- 							<img src="../ejemplos3/image/patatas-fritas.jpg" alt="Cerrar sesión" width="90" height="45"> -->
+			<!-- 						</a> -->
+			<!-- 					</td> -->
+			<!-- 				</tr> -->
+			<!-- 			</table> -->
+		</div>
+		<div id="columnas">
+			<div id="menu">
+				<ul>
+					<li onclick="loadPage('../ejemplos3/Ejercicio3_Listas_Recetas/Ejercicio3.html');">
+						<a href="#">Receta</a> 
+					</li>
+					<li>
+						<a href="#" onclick="loadPage('../ejemplos3/Ejercicio4_Tablas_GrupoMusica/Queen.html');">Grupo Música</a>
+					</li>
+				</ul>
+			</div>
+			<div id="contenido">
+				<h1>Elemplo: Diseño fluido con dos columnas</h1>
+				<p>Al cambiar la anchura de la ventana del navegador donde se
+					esté visualizando esta página web, el tamaño de las diferentes
+					áreas de la página se redimensionan.</p>
+				<img
+					src="../3.Links_Tablas/image/html-lenguaje-de-marcado-de-hipertexto.jpg"
+					alt="Html">
+				<p>Obsérvese que, la imagen también se redimensiona.</p>
+			</div>
+		</div>
+		<div id="pie">
+			<p>
+				©<a href="https://cftic.centrosdeformacion.empleo.madrid.org/" target="_blank">CFTIC Getafe</a> 2024
+			</p>
+		</div>
+
+	</div>
+</body>
+</html>
