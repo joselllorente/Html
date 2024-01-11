@@ -6,11 +6,18 @@
 <link rel="stylesheet" href="estilos-divs.css">
 <script type="text/javascript">
 	function closeSession() {
-		alert("Adios!!")
-		loadPage("cierre_sesion.html")
+
+		respuesta = confirm("Quieres salir?")
+		if (respuesta){
+			alert("Adios!!")
+			loadPage("cierre_sesion.html")
+		}else{
+			alert("Bien!")
+		}
+		
 	}
 	function loadPage(page) {
-		document.getElementById("contenido").innerHTML = '<object type="text/html" height="650px" width="100%" data="'+page+'"></object>';
+		document.getElementById("contenido").innerHTML = '<object type="text/html" height="650px" width="100%" data="Page1.html"></object>';
 	}
 </script>
 </head>
