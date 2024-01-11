@@ -33,9 +33,9 @@ p {
 }
 #cabecera {
 	display: flex;
-  	background-color:#000;
-  	color:#f96;
-  	padding:2%;
+  background-color:#000;
+  color:#f96;
+  padding:2%;
 }
 #columnas {
   background-color:#ddd;
