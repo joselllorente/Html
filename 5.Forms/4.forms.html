@@ -5,7 +5,7 @@
 <title>Ejemplo de agrupación de controles en un formulario</title>
 <script type="text/javascript">
 	function enviar(){
-		nombre = document.getElementById("nombre").value;
+		nombre = document.getElementById("oculto").value;
 		alert(nombre)
 	}
 </script>
@@ -15,14 +15,16 @@
 	<form action="" method="post">
 		<fieldset>
 			<legend>Datos personales:</legend>
-			Campo de texto: <br> <input id="nombre" type="text" name="campo_de_texto">
+			Campo de texto: <br> <input id="texto1" type="text" value="hola" name="campo_de_texto">
 			<br>password: <br> <input id="password" type="password" name="password">
-			<br> Lista de selección: <br> <select
-				name="lista_de_seleccion">
+			<input id="oculto" type="hidden" value="hola">
+			<br> Lista de selección: <br> 
+			<select name="lista_de_seleccion">
 				<option value="opcion1">Opción 1</option>
 				<option value="opcion2">Opción 2</option>
 				<option value="opcion3">Opción 3</option>
-			</select> <br> Área de texto: <br>
+			</select> <br> 
+			Área de texto: <br>
 			<textarea name="area_de_texto" rows="3" cols="50">En este control del formulario se pueden escribir varias líneas de texto.</textarea>
 		</fieldset>
 		<fieldset>
